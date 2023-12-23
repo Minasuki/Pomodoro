@@ -12,7 +12,7 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       <View style={{ paddingTop: Platform.OS === "android" && 30 }}>
         <Text style={styles.text}>Pomodoro</Text>
-        <Header time={time}/>
+        <Header currentTime={currentTime} setCurrentTime={setCurrentTime}/>
       </View>
       <StatusBar style="auto" />
     </SafeAreaView>
